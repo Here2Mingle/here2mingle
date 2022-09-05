@@ -2,38 +2,32 @@
   <!--Main Navigation-->
   <header>
     <!-- Sidebar -->
-    <nav id="sidenav-1" class="sidenav" data-mdb-hidden="false">
+    <nav id="sidenav-1" class="sidenav" data-mdb-hidden="true">
       <ul class="sidenav-menu">
         <li class="sidenav-item">
           <a class="navbar-brand" href="#">
-            LOGO
+            Browse the Community
           </a>
         </li>
         <li class="sidenav-item">
-          <a class="sidenav-link">
-            <i class="far fa-smile fa-fw me-3"></i><span>Link 1</span></a>
+          <a class="sidenav-link" href="/">
+            <i class="far fa-smile fa-fw me-3"></i><span>Home</span></a>
         </li>
         <li class="sidenav-item">
-          <a class="sidenav-link"><i class="fas fa-grin fa-fw me-3"></i><span>Category 1</span></a>
-          <ul class="sidenav-collapse">
-            <li class="sidenav-item">
-              <a class="sidenav-link">Link 2</a>
-            </li>
-            <li class="sidenav-item">
-              <a class="sidenav-link">Link 3</a>
-            </li>
-          </ul>
+          <a class="sidenav-link" href="/members">
+            <i class="far fa-smile fa-fw me-3"></i><span>Browse Members</span></a>
         </li>
         <li class="sidenav-item">
-          <a class="sidenav-link"><i class="fas fa-grin-wink fa-fw me-3"></i><span>Category 2</span></a>
-          <ul class="sidenav-collapse">
-            <li class="sidenav-item">
-              <a class="sidenav-link">Link 4</a>
-            </li>
-            <li class="sidenav-item">
-              <a class="sidenav-link">Link 5</a>
-            </li>
-          </ul>
+          <a class="sidenav-link" href="/channel/">
+            <i class="far fa-smile fa-fw me-3"></i><span>Channels</span></a>
+        </li>
+        <li class="sidenav-item">
+          <a class="sidenav-link" href="/game/">
+            <i class="far fa-smile fa-fw me-3"></i><span>Games</span></a>
+        </li>
+        <li class="sidenav-item">
+          <a class="sidenav-link" href="/journal/">
+            <i class="far fa-smile fa-fw me-3"></i><span>Journals</span></a>
         </li>
       </ul>
     </nav>
@@ -46,23 +40,29 @@
         <!-- Toggle button -->
         <button data-mdb-toggle="sidenav" data-mdb-target="#sidenav-1" class="btn btn-primary"
           aria-controls="#sidenav-1" aria-haspopup="true">
-          <i class="fas fa-bars"></i>
+          <i class="fas fa-bars"> Menu</i>
         </button>
 
         <!-- Brand -->
         <a class="navbar-brand" href="#">
-          LOGO
+         <img src="../static/logo.png" alt="HERE2MINGLE"> HERE2MINGLE
         </a>
         <!-- Search form -->
         <div class="collapse navbar-collapse justify-content-center" id="navbarCenteredExample">
           <form class="d-none d-md-flex input-group w-auto my-auto">
             <input autocomplete="off" type="search" class="form-control rounded"
-              placeholder='Search (ctrl + "/" to focus)' style="width: 525px;">
-            <span class="input-group-text border-0"><i class="fas fa-search"></i></span>
+              placeholder='Search the Community' style="width: 525px;">
+            <span class="input-group-text rounded border-1"><i class="fas fa-search"></i></span>
           </form>
         </div>
         <!-- Right links -->
         <ul class="navbar-nav ms-auto d-flex flex-row">
+          <li class="nav-item">
+            <a class="nav-link me-3 me-lg-0" role="button" aria-expanded="false" href="/social/newsfeed"><i class="fas fa-comment-alt"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link me-3 me-lg-0" role="button" aria-expanded="false" href="/social/groups"><i class="fas fa-users"></i></a>
+          </li>
           <!-- Notification dropdown -->
           <li class="nav-item dropdown">
             <a class="nav-link me-3 me-lg-0 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"

@@ -2,4 +2,8 @@
 const d = new Date();
 document.getElementById("footerYear").innerHTML = d.toUTCString();
 
-// Header Javascript Code
+// Text Editor Javascript Code
+
+import $ from 'jquery'
+
+$('.wysiwyg').wysiwyg();
